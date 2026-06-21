@@ -35,9 +35,10 @@ p.iletisim {
     background-repeat: no-repeat;
 }
 
-.topnav {
-    background-color:var(--section);
+.headertel {
+    background-color: var(--turuncu);
     color: var(--section);
+    margin-top: 20px;
 }
 
 h1,p {
@@ -123,4 +124,12 @@ p.yazi, p.yazianimasyonu {
 .whatsapp-btn:hover {
     transform: translateY(-5px);
     transition:transform 0.3s ease-in-out;
+}
+
+#urunlerimiz, #fotograflar, #iletisim, #bilgi {
+scroll-margin-top: 60px;
+}
+
+#bilgi > div > h2, #bilgi > div > h3, #bilgi > div > p , #bilgi > div > ul {
+    color: var(--turuncu);
 }
