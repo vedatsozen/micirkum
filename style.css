@@ -39,6 +39,11 @@ p.iletisim {
     background-color: var(--turuncu);
     color: var(--section);
     margin-top: 20px;
+    letter-spacing:2px;
+}
+
+.hamburger {
+    color: var(--turuncu);
 }
 
 h1,p {
