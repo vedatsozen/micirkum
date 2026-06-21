@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MICIR KUM FİRMASI WEB SİTESİ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body class="max-w-screen overflow-x-hidden">
+
+    <nav class="topnav hidden p-6 fixed md:flex justify-center items-center top-0 w-screen h-12 bg-black text-white z-50">
+        <div class="flex flex-col justify-center items-center w-1/2">
+            <h2>Adres</h2>
+            <p>Adres: Örnek Mah. Örnek Sok. No:1, İstanbul, Türkiye</p>
+        </div>
+        <div class="flex flex-col justify-center items-center w-1/2">
+            <h2>Telefon</h2>
+            <p>0 555 555 55 55</p>
+        </div>
+    </nav>
+
+    <nav class="hidden h-16 fixed top-12 left-0 right-0 z-10 text-white md:flex justify-center items-center py-4 px-8 z-50">
+        <img src="imgs/truck.png" alt="logo" class="h-12">
+        <ul class="mt-4 p-4 mx-auto flex justify-between items-center gap-4 text-2xl">
+          
+            <a href="#header">Anasayfa</a>
+            <a href="#hakkimizda">Hakkımızda</a>
+            <a href="#hizmetlerimiz">Hizmetlerimiz</a>
+            <a href="#fotograflar">Fotoğraflar</a>
+            <a href="#iletisim">İletişim</a>
+
+        </ul>
+    </nav>
+
+    <nav class="navmobile h-24 fixed md:hidden top-0 z-10 text-white flex justify-between items-center px-4 py-4 w-full">
+        <img class="" src="imgs/truck.png" alt="logo">
+        <i class="hamburger bi text-white bi-list text-4xl cursor-pointer"></i>
+    </nav>
+
+    <script>
+
+    $(document).ready(function(){
+    $(".hamburger").click(function(){
+    $("#acilirmenu").toggleClass("-left-0 -left-full");
+    $(this).toggleClass("bi-list bi-x-lg");
+   
+
+    });
+
+    $(".acilirmenua").click(function(){
+    $("#acilirmenu").toggleClass("-left-0 -left-full");
+    $(".hamburger").toggleClass("bi-list bi-x-lg");
+    $(".acilirmenua").not(this).removeClass("bg-black text-white");
+    });
+
+    });
+
+    </script>
+
+    <nav id="acilirmenu" class="fixed md:hidden h-fit w-8/12 border-2 top-0 -left-full z-10 text-white flex flex-col justify-center items-start text-3xl">
+          
+            <a href="#header" class="acilirmenua h-16 w-full p-4">Anasayfa</a>
+            <a href="#hakkimizda" class="acilirmenua h-16 w-full p-4">Hakkımızda</a>
+            <a href="#hizmetlerimiz" class="acilirmenua h-16 w-full p-4">Hizmetlerimiz</a>
+            <a href="#fotograflar" class="acilirmenua h-16 w-full p-4">Fotoğraflar</a>
+            <a href="#iletisim" class="acilirmenua h-16 w-full p-4">İletişim</a>
+
+        </ul>
+    </nav>
+
+    <header id="header" class="header h-screen max-w-screen flex justify-center items-center">
+        <div class="w-8/12 flex flex-col justify-center items-center text-center gap-4">
+            <h1 class="headerh1 block text-6xl yazi p-4">MICIR VE KUM SATIŞI</h1>
+            <p class="text-xl text-center yazi">Her türlü , kaliteli mıcır ve kum satışı için bizimle arayarak ya da sağ alttaki whatsapp butonuna tıklayarak iletişime geçebilirsiniz.</p>
+            <a href="https://wa.me/905551234567" target="_blank">
+            <i class="bi bi-whatsapp whatsapp-btn fixed bottom-4 right-4 text-4xl text-green-500 z-50"></i>
+            </a>
+        </div>
+    </header>
+
+    <section id="hakkimizda" class="h-screen max-w-screen flex flex-col justify-center items-center text-center gap-4">
+        <div class="h-fit w-10/12 flex flex-col justify-center items-center gap-4">
+            <h1 class="text-6xl text-center yazi">Hakkımızda</h1>
+            <p class="text-normal text-center yazi">
+
+Mıcır ve kum sektöründe kaliteli ürün, güvenilir hizmet ve zamanında teslimat anlayışıyla faaliyet göstermekteyiz. İnşaat, altyapı, yol yapım, peyzaj ve çeşitli yapı projelerinin ihtiyaç duyduğu mıcır ve kum ürünlerini müşterilerimize en uygun çözümlerle sunuyoruz.
+
+Müşteri memnuniyetini ön planda tutarak, kaliteli malzeme tedariki ve hızlı sevkiyat süreçleriyle hizmet vermekteyiz. Geniş ürün yelpazemiz ve profesyonel ekibimiz sayesinde küçük ölçekli projelerden büyük ölçekli çalışmalara kadar her ihtiyaca çözüm üretmeyi hedefliyoruz.
+
+Güven, kalite ve sürdürülebilir hizmet anlayışımız ile sektörde uzun vadeli iş birlikleri kurmayı amaçlıyor, müşterilerimize en iyi hizmeti sunmak için çalışmalarımıza devam ediyoruz.
+
+İhtiyaç duyduğunuz mıcır ve kum ürünleri için bizimle iletişime geçebilir, uzman ekibimizden destek alabilirsiniz.
+
+        </div>
+    </section>
+
+    <section id="hizmetlerimiz" class="h-screen max-w-screen flex flex-col justify-center items-center text-center gap-4">
+        <div class="w-full px-6">
+            <h1 class="text-6xl text-center yazi">Hizmetlerimiz</h1>
+            <p class="text-2xl text-center mt-4 yazi">Mıcır ve kum satışı hizmetlerimiz mevcuttur.</p>
+         
+            <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                <div class="service-card">
+                    <img src="imgs/photos/photo1.jpg" alt="Mıcır ürünü">
+                    <h3>Mıcır</h3>
+                    <p>Fiyat: 150 ₺ / ton</p>
+                </div>
+                <div class="service-card">
+                    <img src="imgs/photos/photo2.jpg" alt="Kum ürünü">
+                    <h3>Kum</h3>
+                    <p>Fiyat: 180 ₺ / ton</p>
+                </div>
+                <div class="service-card">
+                    <img src="imgs/photos/photo3.jpg" alt="Kumlu dolgu ürünü">
+                    <h3>Kumlu Dolgu</h3>
+                    <p>Fiyat: 210 ₺ / ton</p>
+                </div>
+                <div class="service-card">
+                    <img src="imgs/photos/photo4.jpg" alt="Inşaat kumu ürünü">
+                    <h3>İnşaat Kumu</h3>
+                    <p>Fiyat: 195 ₺ / ton</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="fotograflar" class="h-fit max-w-screen flex flex-col justify-center items-center text-center gap-4">
+        <div class="mt-20 w-full">
+            <h1 class="text-6xl text-center yazi">Fotoğraflar</h1>
+            <div class="h-fit p-12 grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                <img src="imgs/photos/photo1.jpg" class="foto h-64 w-full object-cover">
+                <img src="imgs/photos/photo2.jpg" class="foto h-64 w-full object-cover">
+                <img src="imgs/photos/photo3.jpg" class="foto h-64 w-full object-cover">
+                <img src="imgs/photos/photo4.jpg" class="foto h-64 w-full object-cover">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="iletisim" class="h-screen maxw-screen flex flex-col justify-center items-center text-center gap-4">
+
+        <div class="mx-auto h-4/6 w-10/12 flex flex-col md:flex-row justify-center items-center gap-4">
+
+        <div class="h-full w-full md:w-1/2">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.1234567890123!2d29.1234567890123!3d41.1234567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabcde1234567%3A0xabcdef1234567890!2sYour%20Business%20Name!5e0!3m2!1sen!2sus!4v1610000000000" class="h-full w-full" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="h-full w-full md:w-1/2 flex flex-col justify-center items-center">
+            <div class="mx-auto">
+            <h1 class="text-6xl text-center yazi">İletişim</h1>
+            <p class="text-2xl text-center mt-4 yazi">Adres: Örnek Mah. Örnek Sok. No:1, İstanbul, Türkiye</p>
+            <p class="text-2xl text-center mt-4 yazi">Email: info@micirkum.com</p>
+            <p class="text-2xl text-center mt-4 yazi">Telefon: +90 123 456 78 90</p>
+            </div>
+        </div>
+
+        </div>
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

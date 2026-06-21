@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    font-family: 'Epunda Slab', serif;
+}
+
+:root {
+
+    /*
+    --yazi: #E5E5E5;
+    --section:#008b90;
+    --ucuncurenk: #FCA311;
+    */
+    --yazi: #3E4348;   /* Ana renk - koyu taş grisi */
+    --section: #D8C3A5; /* Kum/bej */
+    --turuncu: #C97A40;    /* Vurgu rengi */
+
+}
+
+nav > ul {
+    color: var(--turuncu);
+    letter-spacing:2px;
+}
+
+p.iletisim {
+
+    background-color: var(--yazi);
+    color: var(--section);
+}
+
+.header {
+    background-image: url("imgs/header.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.topnav {
+    background-color:var(--section);
+    color: var(--section);
+}
+
+h1,p {
+    color: var(--turuncu);
+}
+
+section {
+    background-color: var(--section);
+    color: black;
+}
+
+.yazi {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.8s ease-out;
+}
+
+.yazi.yazianimasyonu {
+    opacity: 1;
+    transform: scale(1);
+}
+
+p.yazi, p.yazianimasyonu {
+    transition-delay: 0.3s;
+}
+
+.foto {
+    display: block;
+    object-fit: cover;
+}
+
+.foto:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+
+.service-card {
+    background: #f7efe0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+}
+
+.service-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.service-card h3 {
+    margin: 12px 0 6px;
+    font-size: 1.4rem;
+    color: var(--turuncu);
+}
+
+.service-card p {
+    margin: 0 0 14px;
+    color: var(--yazi);
+    font-size: 1rem;
+}
+
+#acilirmenu {
+    transition: all 0.5s ease-in-out;
+    background-color: var(--section);
+}
+
+.acilirmenua {
+    color: var(--yazi);
+}
+
+.acilirmenua:hover {
+    color: var(--ucuncurenk);
+}
+
+.whatsapp-btn:hover {
+    transform: translateY(-5px);
+    transition:transform 0.3s ease-in-out;
+}
