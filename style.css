@@ -23,6 +23,11 @@ nav > ul {
     letter-spacing:2px;
 }
 
+nav#acilirmenu {
+    background-color: var(--section);
+    color: var(--turuncu);
+}
+
 p.iletisim {
 
     background-color: var(--yazi);
@@ -118,9 +123,6 @@ p.yazi, p.yazianimasyonu {
     background-color: var(--section);
 }
 
-.acilirmenua {
-    color: var(--yazi);
-}
 
 .acilirmenua:hover {
     color: var(--ucuncurenk);
